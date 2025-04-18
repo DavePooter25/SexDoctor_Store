@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AliExpress Clone - Deals Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+
+    header {
+      background-color: #ff4d4f;
+      color: white;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .search-bar {
+      flex: 1;
+      margin: 0 20px;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    .top-nav a {
+      color: white;
+      margin-left: 15px;
+      text-decoration: none;
+    }
+
+    .deals-header {
+      text-align: center;
+      padding: 30px 10px 10px;
+    }
+
+    .deals {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(4in, 1fr));
+      gap: 20px;
+      padding: 20px;
+      justify-items: center;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      width: 4in;
+      height: 4in;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px;
+      text-align: center;
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 60%;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .price {
+      color: #28a745;
+      font-weight: bold;
+    }
+
+    .old-price {
+      text-decoration: line-through;
+      color: #888;
+      font-size: 0.9em;
+    }
+
+    .order-btn {
+      background-color: red;
+      color: white;
+      padding: 5px 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .order-btn:hover {
+      background-color: darkred;
+    }
+
+    .footer {
+      background-color: #333;
+      color: white;
+      padding: 30px;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .footer div {
+      width: 45%;
+      margin-bottom: 20px;
+    }
+
+    .footer h3 {
+      border-bottom: 2px solid #ff4d4f;
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">SexDoctor</div>
+    <input type="text" class="search-bar" placeholder="I'm shopping for..." />
+    <nav class="top-nav">
+      <a href="#">SuperDeals</a>
+      <a href="#">SexDoctor</a>
+      <a href="#">Home & Garden</a>
+      <a href="#">Men's Clothing</a>
+      <a href="#">Electronics</a>
+    </nav>
+  </header>
+
+  <section class="deals-header">
+    <h2>Today's Deals</h2>
+  </section>
+
+  <section class="deals">
+    <!-- Repeat 12 card components -->
+    <!-- Only sample product content shown below for simplicity -->
+    <div class="card">
+      <img src="https://www.farmaciasdirect.eu/cdn/shop/files/wug-chicles-climax-gum-10-uds.webp?v=1725118085" alt="Product 1">
+      <p>Sex Gummy</p>
+      <p class="price">$200.00</p>
+      <button class="order-btn" onclick="placeOrder(200.00)">Order</button>
+    </div>
+    <div class="card">
+      <img src="https://www.xinghaoya.net/cdn/shop/files/6-inches-lifelike-ejaculating-dildo-toy-xinghaoya-1.jpg?v=1737004144" alt="Product 2">
+      <p>Ladies Dildo</p>
+      <p class="price">$140.00</p>
+      <button class="order-btn" onclick="placeOrder(140.00)">Order</button>
+    </div>
+    <div class="card">
+      <img src="https://images-cdn.ubuy.co.in/6358facd023603098c158ffb-max-ayurveda-king-power-oil-for-men.jpg" alt="Product 3">
+      <p>Max Man Power</p>
+      <p class="price">$370.00</p>
+      <button class="order-btn" onclick="placeOrder(370.00)">Order</button>
+    </div>
+    <div class="card">
+      <img src="https://m.media-amazon.com/images/I/51JVgUgrPPL._AC_.jpg" alt="Product 4">
+      <p>Original Natural Male XXL</p>
+      <p class="price">$400.00</p>
+      <button class="order-btn" onclick="placeOrder(400.00)">Order</button>
+    </div>
+    <div class="card">
+      <img src="https://m.media-amazon.com/images/I/71kWk-5z8ZL._AC_UF1000,1000_QL80_.jpg" alt="Product 5">
+      <p>Men Enlargment Essential Oil</p>
+      <p class="price">$300.00</p>
+      <button class="order-btn" onclick="placeOrder(300.00)">Order</button>
+    </div>
+    <div class="card">
+      <img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/ayurvedic/c/1/e/s-exthorba-capsules-power-massage-oil-stamina-capsule-oil-combo-original-imagheq6ar5j3adk.jpeg?q=90&crop=false" alt="Product 6">
+      <p>Sex Thorbax</p>
+      <p class="price">$400.00</p>
+      <button class="order-btn" onclick="placeOrder(400.00)">Order</button>
+    </div>
+    <div class="card">
+      <img src="https://i.ebayimg.com/images/g/Xo0AAOSw6IdkLrAT/s-l1200.jpg" alt="Product 7">
+      <p>Vibratory Ring for Male</p>
+      <p class="price">$190.00</p>
+      <button class="order-btn" onclick="placeOrder(190.00)">Order</button>
+    </div>
+    <div class="card">
+      <img src="https://media6.ppl-media.com//tr:h-750,w-750,c-at_max,dpr-2/static/img/product/336262/azah-personal-body-massager-for-women-chargeable-vibrator-massage-machine-massager-for-relaxation-and-pain-relief-hand-massager-for-females-waterproof-easy-to-clean-portable-flexible-head_1_display_1675147252_80c86718.jpg" alt="Product 8">
+      <p>Vibratory Ring for Female</p>
+      <p class="price">$200.00</p>
+      <button class="order-btn" onclick="placeOrder(200.00)">Order</button>
+    </div>
+    <div class="card">
+      <img src="https://m.media-amazon.com/images/I/61vXhKcbZRL._AC_UF894,1000_QL80_.jpg" alt="Product 9">
+      <p>Sex Toys for male</p>
+      <p class="price">$500.00</p>
+      <button class="order-btn" onclick="placeOrder(500.00)">Order</button>
+    </div>
+    <div class="card">
+      <img src="https://img.pacifiko.com/PROD/resize/1/500x500/NDg3ZGRmOD.jpg" alt="Product 10">
+      <p>Sex Toys for male</p>
+      <p class="price">$450.00</p>
+      <button class="order-btn" onclick="placeOrder(450.00)">Order</button>
+    </div>
+    <div class="card">
+      <img src="https://www.blessmybucket.com/cdn/shop/files/61o7KYr5GqL._US1500_800x.jpg?v=1726071859" alt="Product 11">
+      <p>Sex Toys for male</p>
+      <p class="price">$250.00</p>
+      <button class="order-btn" onclick="placeOrder(250.00)">Order</button>
+    </div>
+    <div class="card">
+      <img src="https://i.etsystatic.com/26713499/r/il/f611c2/5175030583/il_fullxfull.5175030583_cbsk.jpg" alt="Product 12">
+      <p>Lovely Sex Enhancement Gummy</p>
+      <p class="price">$200.00</p>
+      <button class="order-btn" onclick="placeOrder(200.00)">Order</button>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div>
+      <h3>About Us</h3>
+      <p>SexDoctor is your trusted destination for high-quality intimacy and wellness products.
+        We are dedicated to helping individuals feel more confident, empowered, and fulfilled.
+        Our carefully selected range is designed to support your personal needs with safety and comfort in mind.
+        Whether you're looking for enhancement, exploration, or overall well-being, we’ve got you covered.
+        At SexDoctor, your satisfaction, privacy, and health are always our top priorities.</p>
+    </div>
+    <div>
+      <h3>Contact</h3>
+      <p>Email: support@sexdoctor.com</p>
+      <p>Phone: +1 425-286-4490</p>
+      <p>Location:4592 Kreiger Falls, Bayamon, Washington - 95066, El Salvador</p>
+    </div>
+  </footer>
+
+  <script>
+    function placeOrder(price) {
+      window.location.href = `checkout.html?unitPrice=${price}`;
+    }
+  </script>
+</body>
+</html>

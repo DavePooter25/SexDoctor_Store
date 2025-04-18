@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+  }
+  
+  header {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 25px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff4747;
+  }
+  
+  .search-bar {
+    flex: 1;
+    margin: 0 20px;
+    padding: 8px;
+    font-size: 16px;
+  }
+  
+  .top-nav a {
+    margin-left: 15px;
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .deals-header {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .deals {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  .column {
+    background-color: white;
+    padding: 15px;
+    width: 45%;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  }
+  
+  .column h3 {
+    color: #ff4747;
+    margin-bottom: 15px;
+  }
+  
+  .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .card {
+    .card {
+        background-color: #fff;
+        border: 1px solid #eee;
+        border-radius: 10px;
+        padding: 10px;
+        text-align: center;
+        width: 4in;
+        height: 4in;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      
+  }
+  .price-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .order-btn {
+    background-color: #ff4747;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s;
+  }
+  
+  .order-btn:hover {
+    background-color: #e03c3c;
+  }
+  
+  .card img {
+    width: 30%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .price {
+    font-weight: bold;
+    color: #e60012;
+  }
+  
+  .old-price {
+    color: #999;
+    text-decoration: line-through;
+    font-size: 0.9em;
+  }
+  
